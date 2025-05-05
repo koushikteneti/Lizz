@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIZZ Designs - VR Interior Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+
+    
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+   <!-- Navigation -->
+   <nav class="fixed w-full z-50 bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+            <div class="flex-shrink-0 flex items-center">
+                <img src="D:\\VR\\Lizz\\logo.png" alt="LIZZ Designs Logo" class="h-12 w-auto logo-animation">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold gold-text">LIZZ</span>
+                    <span class="text-2xl font-bold text-white">DESIGNS</span>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-8">
+                    <a href="#home" class="text-white hover:text-gold-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+                    <a href="#about" class="text-white hover:text-gold-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">About</a>
+                    <a href="#services" class="text-white hover:text-gold-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Services</a>
+                    <a href="#process" class="text-white hover:text-gold-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Process</a>
+                    <a href="#contact" class="text-white hover:text-gold-500 px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
+                </div>
+            </div>
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <video autoplay muted loop class="absolute z-0 w-auto min-w-full min-h-full max-w-none">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-living-room-in-modern-style-39885-large.mp4" type="video/mp4">
+        </video>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white">
+                <span class="gold-text">Immersive</span> Interior Design
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-300">Experience your dream spaces in Virtual Reality before they're built</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="btn-gold px-8 py-4 rounded-full font-bold text-black hover:shadow-lg transition duration-300">Get Started</a>
+                <a href="#services" class="border-2 border-gold-500 px-8 py-4 rounded-full font-bold text-white hover:bg-gold-500 hover:text-black transition duration-300">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+            <div class="animate-bounce">
+                <svg class="w-8 h-8 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold text-white">ABOUT <span class="gold-text">LIZZ</span></h2>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 slide-in-left">
+                    <div class="relative">
+                        <img src="img1.jpeg" 
+                             alt="VR Interior Design" 
+                             class="rounded-lg shadow-2xl w-full h-auto">
+                        <div class="absolute -bottom-6 -right-6 bg-gold-500 p-4 rounded-lg shadow-lg">
+                            <div class="vr-headset">
+                                <i class="fas fa-vr-cardboard text-5xl text-black"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 slide-in-right">
+                    <p class="text-lg text-gray-300 mb-6">
+                        Lizz is a creative company specializing in designing stunning interiors and presenting them through <span class="gold-text font-bold">Virtual Reality (VR)</span> experiences. We blend artistic vision with cutting-edge technology to bring your dream spaces to life before they're built.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-8">
+                        Our team of passionate designers and technologists work together to create immersive environments that allow you to walk through, interact with, and experience your future space in a way that traditional 2D renderings simply can't match.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <div class="mr-3 gold-bg rounded-full p-2">
+                                <i class="fas fa-award text-black"></i>
+                            </div>
+                            <span class="text-white">Award-Winning Designs</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="mr-3 gold-bg rounded-full p-2">
+                                <i class="fas fa-lightbulb text-black"></i>
+                            </div>
+                            <span class="text-white">Innovative Solutions</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="mr-3 gold-bg rounded-full p-2">
+                                <i class="fas fa-heart text-black"></i>
+                            </div>
+                            <span class="text-white">Client-Focused</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-dark-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold text-white">WHAT WE <span class="gold-text">DO</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-black p-8 rounded-lg border border-gray-800 hover:border-gold-500 transition duration-500 hover:shadow-xl hover:shadow-gold-500/10 transform hover:-translate-y-2">
+                    <div class="gold-bg text-black w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-pencil-ruler text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 text-center">Interior Design</h3>
+                    <p class="text-gray-400 text-center">Custom interior designs tailored to your style, needs, and budget, from concept to completion.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-black p-8 rounded-lg border border-gray-800 hover:border-gold-500 transition duration-500 hover:shadow-xl hover:shadow-gold-500/10 transform hover:-translate-y-2">
+                    <div class="gold-bg text-black w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-vr-cardboard text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 text-center">VR Visualization</h3>
+                    <p class="text-gray-400 text-center">Immersive VR experiences that let you walk through and interact with your future space.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-black p-8 rounded-lg border border-gray-800 hover:border-gold-500 transition duration-500 hover:shadow-xl hover:shadow-gold-500/10 transform hover:-translate-y-2">
+                    <div class="gold-bg text-black w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-home text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 text-center">Space Planning</h3>
+                    <p class="text-gray-400 text-center">Optimized layouts that maximize functionality while maintaining aesthetic appeal.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-black p-8 rounded-lg border border-gray-800 hover:border-gold-500 transition duration-500 hover:shadow-xl hover:shadow-gold-500/10 transform hover:-translate-y-2">
+                    <div class="gold-bg text-black w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-palette text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 text-center">Color Consultation</h3>
+                    <p class="text-gray-400 text-center">Expert guidance on color schemes that create the perfect mood and atmosphere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black z-10"></div>
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1400&q=80" 
+                 alt="Luxury Interior" 
+                 class="w-full h-full object-cover">
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold text-white">WHY CHOOSE <span class="gold-text">LIZZ?</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-dark-gray bg-opacity-90 p-8 rounded-lg border border-gray-800">
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="gold-bg text-black rounded-full p-2 mr-4">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Innovative Designs</h3>
+                                <p class="text-gray-400">We push boundaries with creative solutions that blend aesthetics with functionality.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="gold-bg text-black rounded-full p-2 mr-4">
+                                <i class="fas fa-vr-cardboard"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">VR Showcasing</h3>
+                                <p class="text-gray-400">Experience your space in real-time through our immersive VR technology.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="gold-bg text-black rounded-full p-2 mr-4">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Customer-Centric Approach</h3>
+                                <p class="text-gray-400">Your vision is our priority. We listen, adapt, and deliver beyond expectations.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="gold-bg text-black rounded-full p-2 mr-4">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-2">Affordable Packages</h3>
+                                <p class="text-gray-400">Luxury design experiences at accessible price points for every budget.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-dark-gray bg-opacity-90 p-8 rounded-lg border border-gray-800">
+                    <h3 class="text-2xl font-bold text-white mb-6 gold-text">HOW VR ENHANCES INTERIOR DESIGN</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="gold-text text-xl font-bold mr-4">01</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-1">Experience spaces before they are built</h4>
+                                <p class="text-gray-400">Walk through and interact with your future space in a fully immersive 3D environment.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="gold-text text-xl font-bold mr-4">02</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-1">Make better design decisions</h4>
+                                <p class="text-gray-400">Visualize different options in real-time and choose what works best for you.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="gold-text text-xl font-bold mr-4">03</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-1">Understand space, light, and decor interactively</h4>
+                                <p class="text-gray-400">See how natural light changes throughout the day and how furnishings fit the space.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="gold-text text-xl font-bold mr-4">04</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-white mb-1">Reduces redesign costs</h4>
+                                <p class="text-gray-400">Identify and fix potential issues before construction begins, saving time and money.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-dark-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl font-bold text-white">OUR <span class="gold-text">PROCESS</span></h2>
+            </div>
+            
+            <div class="relative">
+                <div class="hidden lg:block absolute left-1/2 top-0 h-full w-0.5 bg-gradient-to-b from-gold-500 via-gold-500/50 to-transparent"></div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                    <!-- Step 1 -->
+                    <div class="process-step bg-black p-6 rounded-lg border border-gray-800 lg:col-span-1">
+                        <div class="gold-bg text-black w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Client Consultation</h3>
+                        <p class="text-gray-400 text-center">We listen to your vision, needs, and preferences to understand your unique requirements.</p>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="process-step bg-black p-6 rounded-lg border border-gray-800 lg:col-span-1">
+                        <div class="gold-bg text-black w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Concept Development</h3>
+                        <p class="text-gray-400 text-center">Our designers create initial concepts and mood boards based on your input.</p>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="process-step bg-black p-6 rounded-lg border border-gray-800 lg:col-span-1">
+                        <div class="gold-bg text-black w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="font-bold">3</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">VR Prototype</h3>
+                        <p class="text-gray-400 text-center">We transform concepts into an immersive VR experience for you to explore.</p>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="process-step bg-black p-6 rounded-lg border border-gray-800 lg:col-span-1">
+                        <div class="gold-bg text-black w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="font-bold">4</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Feedback & Revisions</h3>
+                        <p class="text-gray-400 text-center">You experience the VR prototype and provide feedback for refinements.</p>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="process-step bg-black p-6 rounded-lg border border-gray-800 lg:col-span-1">
+                        <div class="gold-bg text-black w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <span class="font-bold">5</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-center">Final Delivery</h3>
+                        <p class="text-gray-400 text-center">We deliver the completed design package and VR experience for implementation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VR Experience Section -->
+    <section class="py-20 bg-black relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black z-10"></div>
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                 alt="VR Experience" 
+                 class="w-full h-full object-cover">
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white">EXPERIENCE THE <span class="gold-text">DIFFERENCE</span></h2>
+                <p class="text-xl text-gray-300 mt-4 max-w-3xl mx-auto">See how VR transforms interior design from abstract concepts to tangible experiences</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-dark-gray bg-opacity-90 p-8 rounded-lg border border-gray-800 hover:border-gold-500 transition duration-500">
+                    <div class="gold-bg text-black w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-eye text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 text-center">True-to-Life Visualization</h3>
+                    <p class="text-gray-400 text-center">Experience accurate scale, proportions, and spatial relationships that photos can't convey.</p>
+                </div>
+                
+                <div class="bg-dark-gray bg-opacity-90 p-8 rounded-lg border border-gray-800 hover:border-gold-500 transition duration-500">
+                    <div class="gold-bg text-black w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-arrows-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 text-center">Interactive Exploration</h3>
+                    <p class="text-gray-400 text-center">Move freely through spaces, open doors, change materials, and test different layouts.</p>
+                </div>
+                
+                <div class="bg-dark-gray bg-opacity-90 p-8 rounded-lg border border-gray-800 hover:border-gold-500 transition duration-500">
+                    <div class="gold-bg text-black w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-lightbulb text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4 text-center">Informed Decision Making</h3>
+                    <p class="text-gray-400 text-center">Make confident choices about finishes, furnishings, and layouts after experiencing them.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#contact" class="btn-gold px-8 py-4 rounded-full font-bold text-black hover:shadow-lg transition duration-300 inline-block">Schedule Your VR Demo</a>
+            </div>
+        </div>
+    </section>
+
+   
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-dark-gray p-8 rounded-lg border border-gray-800 h-full">
+                        <h3 class="text-2xl font-bold text-white mb-6 gold-text">CONTACT INFORMATION</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="gold-bg text-black rounded-full p-3 mr-4">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-1">Website</h4>
+                                    <a href="https://www.lizzdesigns.com" class="text-gray-400 hover:text-gold-500 transition duration-300">www.lizzdesigns.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="gold-bg text-black rounded-full p-3 mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-1">Email</h4>
+                                    <a href="mailto:lizzdesigns@gmail.com" class="text-gray-400 hover:text-gold-500 transition duration-300">lizzdesigns@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="gold-bg text-black rounded-full p-3 mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-white mb-1">Phone</h4>
+                                    <a href="tel:+91 8688751741" class="text-gray-400 hover:text-gold-500 transition duration-300">+91-8688751741,+91-9346145612</a>
+                                </div>
+                            </div>
+                            
+                            
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h4 class="text-lg font-semibold text-white mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="social-icon text-gray-400 hover:text-gold-500 text-2xl">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon text-gray-400 hover:text-gold-500 text-2xl">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon text-gray-400 hover:text-gold-500 text-2xl">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon text-gray-400 hover:text-gold-500 text-2xl">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-icon text-gray-400 hover:text-gold-500 text-2xl">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <span class="text-2xl font-bold gold-text">LIZZ</span>
+                    <span class="text-2xl font-bold text-white">DESIGNS</span>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#home" class="text-gray-400 hover:text-gold-500 transition duration-300">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-gold-500 transition duration-300">About</a>
+                    <a href="#services" class="text-gray-400 hover:text-gold-500 transition duration-300">Services</a>
+                    <a href="#process" class="text-gray-400 hover:text-gold-500 transition duration-300">Process</a>
+                    <a href="#contact" class="text-gray-400 hover:text-gold-500 transition duration-300">Contact</a>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="social-icon text-gray-400 hover:text-gold-500 text-xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon text-gray-400 hover:text-gold-500 text-xl">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon text-gray-400 hover:text-gold-500 text-xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 LIZZ Designs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
