@@ -1,29 +1,27 @@
 
-
-// Simple animations on scroll
 document.addEventListener('DOMContentLoaded', function() {
-    const observerOptions = {
-        threshold: 0.1
-    };
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
     
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-fadeIn');
-            }
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
         });
-    }, observerOptions);
+    }
     
-    // Observe all sections
-    document.querySelectorAll('section').forEach(section => {
-        observer.observe(section);
+    // Close mobile menu when clicking a link
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
     });
-    
+
     // Smooth scrolling for navigation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
             
@@ -34,11 +32,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
         });
-    });
-    
-    // Floating animation for VR elements
-    const vrElements = document.querySelectorAll('.vr-headset, .floating');
-    vrElements.forEach(el => {
-        el.style.animationDelay = `${Math.random() * 2}s`;
     });
 });
